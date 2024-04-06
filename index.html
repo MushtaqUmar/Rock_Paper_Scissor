@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock_Paper_Scissors Game</title>
+    <!-- Link css file -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- heading of gamme -->
+    <h1>Rock Paper Scissors</h1>
+
+    <!-- choices for user or computer  -->
+    <div class="choices">
+            <div class="choice" id="rock">
+                <img src="./images/rock.png" alt="Rock unavl">
+            </div>
+            <div class="choice" id="paper">
+                <img src="./images/paper.png" alt="IPaper unavl">
+            </div>
+            <div class="choice" id="scissors">
+                <img src="./images/scissor.png" alt="Scissor unavl">
+            </div>
+    </div>
+
+    <!-- score board of game  -->
+    <div class="score-board">
+        <div class="score">
+            <p id="user-score">0</p>    <!-- updated as game proceeds-->
+            <p>You</p>    <!-- Msg distinguishes from computer score-->
+        </div>
+
+        <div class="score">  <!-- Common class as user to apply same CSS-->
+            <p id="comp-score">0</p> <!-- COunts the winning score of COmputer-->
+            <p>Machine</p>
+        </div> 
+    </div>
+
+
+
+    <!-- Message to declare who wins/fraw  -->
+    <div class="msg-container">
+        <p id="msg">Result Board</p>   <!-- its content is updated as per winner or draw game (js code)-->
+    </div>
+    
+
+    <!-- reset Game/ Score board (0,0)  -->
+    <button class="reset-btn">Reset Game</div>
+ 
+
+    <!-- Link js file -->
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;    /* to put document content in the center*/
+}
+
+h1{
+    background-color: #081b31;
+    color: #fff;     /* text color */
+    height: 5rem;  
+    /* for vertically in center  */
+    line-height: 5rem; /* Means give text height same as h1 box height (5rem also above set) */
+}
+
+.choice{
+    height: 170px;
+    width: 170px;
+    /* /* img at cente  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    
+}
+
+
+img{
+    height: 150px;
+    width: 150px;
+    /*In div imag gets shrink/distort AND to Make image clear inside div  */
+    object-fit: cover; 
+}
+
+/* To put 3 choices in center of <choices> with some gap between choices  */
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;      /* rem: is relative to the root (HTML) font size */ 
+    margin-top: 3rem;
+}
+
+.choice:hover{
+    cursor: pointer;  /* hand type */
+    background-color: #edede9;
+}
+
+/* CSS to score Board  */
+.score-board{
+    /* Put its div's in center wrt to it  */
+    display: flex;
+    justify-content: center;
+    align-items: center;  /* vertically */
+    gap: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
+#user-score, #comp-score{
+    font-size: 4rem;
+}
+
+/* CSS to last msg- > result Decleration */
+#msg{
+    background-color: #081b31;
+    color: #fff;
+    font-size: 2rem;
+    /* Take space as per content only  */
+    display: inline;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+/* CSS reset Game  */
+.reset-btn{
+    background-color: #03045e;
+    color: white;
+    padding: 1rem;
+    font-size: 2.5rem;
+    
+    display: inline-block; /* inline : so that as per content space, inline-block : so that margin-top can be applied*/
+    margin-top: 2rem;
+    border-radius: 1.5rem;
+    border: none; /* border of button element not needed */
+}
